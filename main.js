@@ -121,7 +121,9 @@ function initControls() {
 }
 
 async function init() {
-    textureList = loadJSONFile("./resources/textureList.json");
+    textureList = await loadJSONFile("./resources/textureList.json");
+    console.log("Texture list loaded:");
+    console.log(textureList);
     tiles = await loadTiles(textureList.tiles);
     console.log("Tiles loaded:");
     console.log(tiles);
