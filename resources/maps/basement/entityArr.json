@@ -1,0 +1,48 @@
+[
+	{
+		"type":"door",
+		"x":15,
+		"y":9,
+		"sprite":"stairs",
+		"orientation":"Up",
+		"isLocked":false,
+		"key":null,
+		"destination":"start",
+		"spawnX":6,
+		"spawnY":7,
+		"eventIndex":0
+	},
+	{
+		"type":"chest",
+		"x":12,
+		"y":5,
+		"sprite":"chest",
+		"orientation":"Down",
+		"isLocked":false,
+		"key":"yellowKey",
+		"inventory":{
+			"slot1":null,
+			"slot2":null,
+			"slot3":null,
+			"slot4":null,
+			"slot5":"yellowKey",
+			"slot6":null,
+			"slot7":null,
+			"slot8":null,
+			"slot9":null
+		},
+		"eventIndex":0
+	},
+	{
+		"type":"npc",
+		"name":"jan pi sewi ike",
+		"x":12,
+		"y":6,
+		"sprite":"cultist",
+		"orientation":"Down",
+		"eventList":[
+			["message", ["jan pi sewi ike","toki!"], [[0,false]]]
+		],
+		"eventIndex":0
+	}
+]

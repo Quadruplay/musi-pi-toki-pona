@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>map editor</title>
+    <style>
+        #canvas, #collisionCanvas {
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            transform: translate(-50%, 0%);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="editor.html">
+            <button>back</button>
+        </a>
+    </div>
+    <div>
+        <label for="tileSelector">Select a tile:</label>
+        <select id="tileSelector" name="tiles">
+        </select>
+        <label for="toolType">Select tool</label>
+        <select id="toolType" name="toolType">
+            <option value="draw">draw</option>
+            <option value="fill">fill</option>
+        </select>
+        <button id="fillButton">fill all</button>
+    </div>
+    <canvas id="tileCanvas" width="256" height="256"></canvas>
+    <canvas id="canvas" width="960" height="640"></canvas>
+    <canvas id="collisionCanvas" width="960" height="640"></canvas>
+    <div>
+        <label for="collision">Collision:</label>
+        <select id="collision" name="collision">
+            <option value="0">remove</option>
+            <option value="1">add</option>
+        </select>
+    </div>
+    <div>
+        <button id="collisionButton">Show Collision</button>
+    </div>
+    <div>
+        <button id="saveButton">save</button>
+        <button id="loadButton">load</button>
+        <button id="clearButton">clear</button>
+        <button id="downloadButton">download</button>
+    </div>
+    <script src="mapEditor.js" type="module"></script>
+</body>
+</html>

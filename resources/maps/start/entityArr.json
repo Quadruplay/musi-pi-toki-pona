@@ -1,0 +1,36 @@
+[
+	{
+		"type":"chest",
+		"x":4,
+		"y":4,
+		"sprite":"chest",
+		"orientation":"Down",
+		"isLocked":true,
+		"key":"yellowKey",
+		"inventory":{
+			"slot1":"redHelmet",
+			"slot2":null,
+			"slot3":"blueHelmet",
+			"slot4":null,
+			"slot5":null,
+			"slot6":null,
+			"slot7":null,
+			"slot8":"redNecklace",
+			"slot9":null
+		},
+		"eventIndex":1
+	},
+	{
+		"type":"door",
+		"x":6,
+		"y":6,
+		"sprite":"hatch",
+		"orientation":"Up",
+		"isLocked":false,
+		"key":null,
+		"destination":"basement",
+		"spawnX":15,
+		"spawnY":10,
+		"eventIndex":0
+	}
+]

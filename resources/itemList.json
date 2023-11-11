@@ -1,0 +1,30 @@
+{
+	"redHelmet":{
+		"name":"len lawa kiwen loje",
+		"id":"redHelmet",
+		"type":"head",
+		"sprite":"redHelmet",
+		"desc":"ni li len lawa kiwen. ni li laso"
+	},
+	"blueHelmet":{
+		"name":"len lawa kiwen laso",
+		"id":"blueHelmet",
+		"type":"head",
+		"sprite":"blueHelmet",
+		"desc":"ni li len lawa kiwen. ni li laso"
+	},
+	"redNecklace":{
+		"name":"len loje pi anpa lawa",
+		"id":"redNecklace",
+		"type":"necklace",
+		"sprite":"redNecklace",
+		"desc":"ni li len pi anpa lawa. ni li loje"
+	},
+	"yellowKey":{
+		"name":"ilo open jelo",
+		"id":"yellowKey",
+		"type":"key",
+		"sprite":"yellowKey",
+		"desc":"ni li ilo open. ni li jelo"
+	}
+}

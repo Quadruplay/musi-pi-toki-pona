@@ -1,0 +1,42 @@
+/* make canvases overlap at the center of the screen */
+#tiles, #entities, #effects {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+/* make the tiles canvas appear behind the entities canvas */
+#tiles {
+    z-index: -2;
+}
+#entities {
+    z-index: -1;
+}
+#inventory, #inventoryBackground {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(150%, 0%);
+}
+#inventoryBackground {
+    z-index: -1;
+}
+#ui {
+    position: absolute;
+    top: 640px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+#dictionary {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-250%, 0%);
+}
+canvas {
+    image-rendering: pixelated;
+}
+@font-face {
+    font-family: "lunchds";
+    src: url("./resources/fonts/lunchds.ttf");
+}
