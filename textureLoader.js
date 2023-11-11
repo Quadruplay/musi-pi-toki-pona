@@ -19,7 +19,7 @@ async function fetchPNGFilesInDirectory(path) {
                 pngFileNames.push(nameWithoutExtension);
             }
         }
-
+        console.log(JSON.stringify(pngFileNames))
         return pngFileNames;
     } catch (error) {
         console.error('Error fetching directory:', error);
@@ -27,11 +27,10 @@ async function fetchPNGFilesInDirectory(path) {
     }
 }
 
-export const loadTiles = () => {
+export const loadTiles = (tileList) => {
     return new Promise(async (resolve)=>{
         let tiles={};
         let tilesLoaded=0;
-        let tileList = await fetchPNGFilesInDirectory('./resources/textures/tiles/');
         for (let i=0; i<tileList.length; i++){
             tiles[tileList[i]]=new Image();
             tiles[tileList[i]].src="./resources/textures/tiles/" + tileList[i] + ".png";
@@ -45,11 +44,10 @@ export const loadTiles = () => {
     })
 }
 
-export const loadSprites = () => {
+export const loadSprites = (spriteList) => {
     return new Promise(async (resolve)=>{
         let sprites={};
         let spritesLoaded=0;
-        let spriteList = await fetchPNGFilesInDirectory('./resources/textures/entities/');
         for (let i=0; i<spriteList.length; i++){
             sprites[spriteList[i]]=new Image();
             sprites[spriteList[i]].src="./resources/textures/entities/" + spriteList[i] + ".png";
@@ -63,11 +61,10 @@ export const loadSprites = () => {
     })
 }
 
-export const loadInterface = () => {
+export const loadInterface = (interfaceImageList) => {
     return new Promise(async (resolve)=>{
         let interfaceImages={};
         let interfaceImagesLoaded=0;
-        let interfaceImageList = await fetchPNGFilesInDirectory('./resources/textures/interface/');
         for (let i=0; i<interfaceImageList.length; i++){
             interfaceImages[interfaceImageList[i]]=new Image();
             interfaceImages[interfaceImageList[i]].src="./resources/textures/interface/" + interfaceImageList[i] + ".png";
@@ -81,11 +78,10 @@ export const loadInterface = () => {
     })
 }
 
-export const loadItems = () => {
+export const loadItems = (itemList) => {
     return new Promise(async (resolve)=>{
         let items={};
         let itemsLoaded=0;
-        let itemList = await fetchPNGFilesInDirectory('./resources/textures/items/');
         for (let i=0; i<itemList.length; i++){
             items[itemList[i]]=new Image();
             items[itemList[i]].src="./resources/textures/items/" + itemList[i] + ".png";

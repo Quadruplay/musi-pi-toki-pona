@@ -18,6 +18,7 @@ let collisionMap;
 let entities = [];
 export let itemList;
 let currentMapName = "start";
+let textureList;
 
 function initControls() {
     var newEl = document.body.cloneNode(false);
@@ -120,16 +121,17 @@ function initControls() {
 }
 
 async function init() {
-    tiles = await loadTiles();
+    textureList = loadJSONFile("./resources/textureList.json");
+    tiles = await loadTiles(textureList.tiles);
     console.log("Tiles loaded:");
     console.log(tiles);
-    sprites = await loadSprites();
+    sprites = await loadSprites(textureList.entities);
     console.log("Sprites loaded:");
     console.log(sprites);
-    interfaceImages = await loadInterface();
+    interfaceImages = await loadInterface(textureList.interface);
     console.log("Interface loaded:");
     console.log(interfaceImages);
-    itemSprites = await loadItems();
+    itemSprites = await loadItems(textureList.items);
     console.log("Item sprites loaded:");
     console.log(itemSprites);
     map = await loadJSONFile("./resources/maps/"+currentMapName+"/tileMap.json");

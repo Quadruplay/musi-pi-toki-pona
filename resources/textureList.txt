@@ -1,0 +1,6 @@
+{
+	"tiles":["dirt","empty","grass","sand","wall","wallMoss","wallWater","wallWaterSewer","water"]
+	"entities":["chestDown","chestLeft","chestRight","chestUp","cultistDown","cultistLeft","cultistRight","cultistUp","hatchUp","npc","playerDown","playerLeft","playerRight","playerUp","stairsUp"]
+	"interface":["bodyEmpty","bootsEmpty","dictionary","exit","hand1Empty","hand2Empty","headEmpty","inventory","necklaceEmpty","playerInventory","ring1Empty","ring2Empty","ui"]
+	"items":["blueHelmet","bodyEmpty","bootsEmpty","hand1Empty","hand2Empty","redHelmet","redNecklace","ring1Empty","ring2Empty","yellowKey"]
+}
